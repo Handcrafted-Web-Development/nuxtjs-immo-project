@@ -12,6 +12,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 'latest'
-      - run: npm ci
-      - run: npx playwright install-deps
+      - run: npm install
+      - run: npx playwright install
       - run: npm run e2e
