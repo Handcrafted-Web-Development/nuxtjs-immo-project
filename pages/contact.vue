@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col bg-white dark:bg-gray-800 p-16">
     <h1 class="text-center text-2xl text-gray-900 dark:text-white mb-5">Formulaire de contact</h1>
-    <form class="max-w-md mx-auto">
+    <form class="max-w-md w-full mx-auto">
       <div class="relative z-0 w-full mb-5 group">
         <input type="text" name="sender_type" id="sender_type"
                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
