@@ -6,7 +6,7 @@
         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">GoAgency</span>
       </a>
       <div class="flex items-center lg:order-2">
-        <span class="text-white font-medium w-[157px] text-right">Bienvenue !</span>
+        <span class="hidden md:block text-gray-800 dark:text-white font-medium w-[157px] text-right">Bienvenue !</span>
         <button data-collapse-toggle="mobile-menu-2" type="button"
                 class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="mobile-menu-2" aria-expanded="false">
@@ -32,4 +32,11 @@
   </nav>
 </template>
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+onMounted(() => {
+  initFlowbite();
+})
+
 </script>
