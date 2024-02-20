@@ -14,6 +14,5 @@ jobs:
           node-version: 'latest'
       - run: npm ci
       - run: npx playwright install --with-deps
-      - run: npm run dev --if-present
-      - run: sleep 5s
+      - run: npm run dev --if-present &
       - run: npm run e2e
